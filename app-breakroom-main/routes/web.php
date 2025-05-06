@@ -208,10 +208,7 @@ Route::middleware(['auth', AdminMiddleware::class])->group(function () {
 
 // User Routes
 Route::middleware(['auth'])->group(function () {
-    // Profile
-    //Already Done Above
-    // Route::get('/profile', [ProfileController::class, 'index'])->name('profile.index');
-    // Route::put('/profile/update', [ProfileController::class, 'update'])->name('profile.update');
+
 
     // Food & Drinks
     Route::get('/food-and-drinks', [FoodAndDrinkController::class, 'index'])->name('food-and-drinks.index');
